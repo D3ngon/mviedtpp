@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Watch Party App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Watch Party App</h1>
+	</header>
+	<main>
+		<section class="video-section">
+			<h2>Video</h2>
+			<div class="video-container">
+				<video id="video" controls></video>
+			</div>
+			<div class="controls">
+				<button id="play-btn">Play</button>
+				<button id="pause-btn">Pause</button>
+				<input id="seek-bar" type="range" min="0" max="100" value="0" step="1">
+			</div>
+		</section>
+		<section class="chat-section">
+			<h2>Chat</h2>
+			<div class="messages">
+				<ul id="messages"></ul>
+			</div>
+			<form id="message-form">
+				<input type="text" name="message" placeholder="Type your message here...">
+				<button>Send</button>
+			</form>
+		</section>
+	</main>
+	<script src="app.js"></script>
+</body>
+</html>

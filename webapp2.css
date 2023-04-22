@@ -1,0 +1,85 @@
+body {
+	font-family: sans-serif;
+	background-color: #f9f9f9;
+}
+
+header {
+	background-color: #e50914;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.video-section, .chat-section {
+	width: 400px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.video-section h2, .chat-section h2 {
+	margin-top: 0;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+.video-container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.controls {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.controls button, .controls input {
+	margin-right: 10px;
+}
+
+.messages {
+	height: 400px;
+	overflow-y: scroll;
+}
+
+.messages li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+form {
+	margin-top: 10px;
+	display: flex;
+}
+
+form input {
+	flex-grow: 1;
+	padding: 10px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+}
+
+form button {
+	padding: 10px;
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
